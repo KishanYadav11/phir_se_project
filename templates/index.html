@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITHI Chatbot | Leak Weak Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="chat-wrapper">
+        <div class="header">
+            <h2>MITHI: Your Health Ally</h2>
+            <p>Supportive &amp; judgment-free</p>
+        </div>
+
+        <div id="chat-display" class="chat-display" aria-live="polite">
+            <div class="msg bot-msg">Hi! I am MITHI. I'm here to answer your questions about menstrual health and hygiene in a safe, supportive space. How can I help you today?</div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask MITHI anything..." autocomplete="off" maxlength="1000">
+            <button id="send-btn" aria-label="Send message">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="disclaimer">
+            MITHI is an AI, not a doctor. For severe pain, very heavy bleeding or emergencies, please see a healthcare professional.
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
